@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Kazakhstan</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+</head>
+<body class="bg-white-100">
+    <header class="bg-black text-white p-4">
+        <nav class="flex justify-between items-center">
+            <!-- Logo and Title -->
+            <h1 class="text-3xl font-bold">Welcome to Kazakhstan</h1>
+
+              <!-- Hamburger Button (Visible on Small Screens) -->
+                <button id="menu-btn" class="md:hidden text-white text-3xl">
+                    ☰
+                 </button>
+    
+                    <!-- Navigation Links -->
+            <ul id="menu" class="hidden md:flex space-x-6">
+                <li><a href="index.html" class="hover:text-gray-400">Home</a></li>
+                <li><a href="about.html" class="hover:text-gray-400">About</a></li>
+                <li><a href="activities.html" class="hover:text-gray-400">Activities</a></li>
+                <li><a href="attractions.html" class="hover:text-gray-400">Attractions</a></li>
+                <li><a href="contact.html" class="hover:text-gray-400">Contact</a></li>
+            </ul>
+        </nav>
+
+    <!-- Mobile Menu -->
+    <ul id="mobile-menu" class="hidden flex flex-col space-y-4 bg-black p-4 md:hidden">
+        <li><a href="index.html" class="hover:text-gray-400">Home</a></li>
+        <li><a href="about.html" class="hover:text-gray-400">About</a></li>
+        <li><a href="activities.html" class="hover:text-gray-400">Activities</a></li>
+        <li><a href="attractions.html" class="hover:text-gray-400">Attractions</a></li>
+        <li><a href="contact.html" class="hover:text-gray-400">Contact</a></li>
+    </ul>
+
+    </header>
+    
+    <main class="p-6">
+        <p class="text-lg">Kazakhstan</p>
+        
+    </main>
+
+    <script>
+        const menuBtn = document.getElementById("menu-btn");
+        const mobileMenu = document.getElementById("mobile-menu");
+    
+        menuBtn.addEventListener("click", () => {
+            mobileMenu.classList.toggle("hidden");
+        });
+    </script>
+</body>
+</html>
