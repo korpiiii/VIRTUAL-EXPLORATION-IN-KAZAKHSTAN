@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head >
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Kazakhstan</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="relative h-screen bg-cover bg-center " style="background-image: url('images/background.jpeg');">
+    <header class="fixed top-0 left-0 w-full text-black p-4 z-50 bg-white">
+        <nav class="flex justify-between   items-center">
+            
+            <!-- Logo and Title -->
+            <h1 class="text-3xl font-bold">Welcome to Kazakhstan</h1>
+
+              <!-- Hamburger Button (Visible on Small Screens) -->
+                <button id="menu-btn" class="md:hidden text-black text-3xl">
+                    ☰
+                 </button>
+                 
+                    <!-- Navigation Links -->
+            <ul id="menu" class="hidden md:flex space-x-6">
+                <li><a href="index.html" class="hover:text-gray-400">Home</a></li>
+                <li><a href="about.html" class="hover:text-gray-400">About</a></li>
+                <li><a href="activities.html" class="hover:text-gray-400">Activities</a></li>
+                <li><a href="attractions.html" class="hover:text-gray-400">Attractions</a></li>
+                <li><a href="contact.html" class="hover:text-gray-400">Contact</a></li>
+            </ul>
+        
+        </nav>
+
+    <!-- Mobile Menu -->
+    <ul id="mobile-menu" class="hidden flex flex-col space-y-4 bg-transparent p-4 md:hidden">
+        <li><a href="index.html" class="hover:text-gray-400">Home</a></li>
+        <li><a href="about.html" class="hover:text-gray-400">About</a></li>
+        <li><a href="activities.html" class="hover:text-gray-400">Activities</a></li>
+        <li><a href="attractions.html" class="hover:text-gray-400">Attractions</a></li>
+        <li><a href="contact.html" class="hover:text-gray-400">Contact</a></li>
+    </ul>
+
+    </header>
+
+    <section class="relative h-screen bg-cover bg-center">
+        <!-- Overlay -->
+        <div class="absolute inset-0  bg-opacity-50"></div>
+    
+        <!-- Hero Content -->
+        <div class="relative z-10 flex flex-col items-center justify-center h-full text-center text-white px-6">
+            <h1 class="text-4xl md:text-6xl font-bold">Welcome to Kazakhstan</h1>
+            <p class="text-lg md:text-2xl mt-4 max-w-2xl">Discover the beauty, culture, and adventure of this amazing country.</p>
+            <a href="attractions.html" class="mt-6 px-6 py-3 bg-yellow-500 text-black font-semibold rounded-lg shadow-md hover:bg-yellow-600 transition">Explore Now</a>
+        </div>
+    </section>
+
+    <section class="relative bg-cover bg-center min-h-screen flex items-center justify-center text-white" 
+    style="background-image: url('images/geography-bg.jpg');">
+
+<div class="relative container mx-auto px-6">
+   <h2 class="text-4xl font-bold text-center text-white mb-6">Geography of Kazakhstan</h2>
+
+   <div class="grid md:grid-cols-2 gap-10 items-center bg-white/70 p-8 rounded-lg shadow-lg">
+       <!-- Text Content -->
+       <div>
+            <p class="text-5xl text-black font-bold">
+                Did You Know?
+            </p>
+            
+           <p class="mt-4 text-lg text-black text-justify font-semibold">
+               Kazakhstan is the largest landlocked country in the world, covering an area of 
+               approximately 2.7 million square kilometers. It is located in Central Asia, 
+               bordered by Russia, China, Kyrgyzstan, Uzbekistan, and Turkmenistan.
+           </p>
+           <p class="mt-4 text-lg text-black text-justify font-semibold">                             
+               The country features vast steppes, mountains, deserts, and lakes, including the famous 
+               Caspian Sea, the Tien Shan mountains, and Lake Balkhash. Kazakhstan's climate is 
+               continental, with hot summers and cold winters.
+           </p>
+       </div>
+
+       <!-- Image -->
+       <div class="flex justify-center">
+           <img src="images/kazakhstan-map.png" alt="Kazakhstan Map" 
+                class="w-full max-w-md rounded-lg shadow-lg">
+       </div>
+   </div>
+</div>
+</section>
+
+
+
+
+<section class="relative bg-cover bg-center min-h-screen flex items-center justify-center text-white" 
+         style="background-image: url('images/background.jpeg');">
+    <!-- Dark Overlay -->
+    <div class="absolute inset-0 bg-black/50"></div>
+
+    <div class="relative container mx-auto px-6">
+        <h2 class="text-4xl font-bold text-center mb-6">Top 5 Must-Visit Places in Kazakhstan</h2>
+
+        <div class="grid md:grid-cols-3 lg:grid-cols-5 gap-6 bg-white/10 p-8 rounded-lg shadow-lg">
+            <!-- Charyn Canyon -->
+            <div class="bg-white text-black p-4 rounded-lg shadow-lg">
+                <img src="images/charyn-canyon.jpg" alt="Charyn Canyon" class="w-full rounded-lg mb-4">
+                <h3 class="text-lg font-bold">Charyn Canyon</h3>
+                <p class="text-gray-700">Known as the "Grand Canyon of Kazakhstan." Perfect for hiking and photography.</p>
+            </div>
+
+            <!-- Baikonur Cosmodrome -->
+            <div class="bg-white text-black p-4 rounded-lg shadow-lg">
+                <img src="images/baikonur.jpg" alt="Baikonur Cosmodrome" class="w-full rounded-lg mb-4">
+                <h3 class="text-lg font-bold">Baikonur Cosmodrome</h3>
+                <p class="text-gray-700">The world’s largest space launch facility where Yuri Gagarin was launched.</p>
+            </div>
+
+            <!-- Medeu Skating Rink -->
+            <div class="bg-white text-black p-4 rounded-lg shadow-lg">
+                <img src="images/medeu.jpg" alt="Medeu Skating Rink" class="w-full rounded-lg mb-4">
+                <h3 class="text-lg font-bold">Medeu Skating Rink</h3>
+                <p class="text-gray-700">The highest ice skating rink, surrounded by beautiful mountains.</p>
+            </div>
+
+            <!-- Big Almaty Lake -->
+            <div class="bg-white text-black p-4 rounded-lg shadow-lg">
+                <img src="images/big-almaty-lake.jpg" alt="Big Almaty Lake" class="w-full rounded-lg mb-4">
+                <h3 class="text-lg font-bold">Big Almaty Lake</h3>
+                <p class="text-gray-700">A breathtaking turquoise lake, ideal for hiking and photography.</p>
+            </div>
+
+            <!-- Turkestan -->
+            <div class="bg-white text-black p-4 rounded-lg shadow-lg">
+                <img src="images/turkestan.jpg" alt="Turkestan" class="w-full rounded-lg mb-4">
+                <h3 class="text-lg font-bold">Turkestan</h3>
+                <p class="text-gray-700">A UNESCO site with stunning Persian-style architecture.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Leisure Activities Section -->
+<section class="relative bg-cover bg-center min-h-screen flex items-center justify-center text-white" 
+         style="background-image: url('images/activities-bg.jpg');">
+    <!-- Dark Overlay -->
+    <div class="absolute inset-0 bg-black/50"></div>
+
+    <div class="relative container mx-auto px-6">
+        <h2 class="text-4xl font-bold text-center mb-6">Leisure Activities in Kazakhstan</h2>
+
+        <div class="grid md:grid-cols-3 gap-6 bg-white/10 p-8 rounded-lg shadow-lg">
+            <!-- Horseback Riding -->
+            <div class="bg-white text-black p-4 rounded-lg shadow-lg">
+                <img src="images/horseback-riding.jpg" alt="Horseback Riding" class="w-full rounded-lg mb-4">
+                <h3 class="text-lg font-bold">Horseback Riding</h3>
+                <p class="text-gray-700">Experience traditional Kazakh culture by riding through scenic landscapes.</p>
+            </div>
+
+            <!-- Hiking and Trekking -->
+            <div class="bg-white text-black p-4 rounded-lg shadow-lg">
+                <img src="images/hiking.jpg" alt="Hiking and Trekking" class="w-full rounded-lg mb-4">
+                <h3 class="text-lg font-bold">Hiking & Trekking</h3>
+                <p class="text-gray-700">Explore Kazakhstan’s mountains and valleys with stunning panoramic views.</p>
+            </div>
+
+            <!-- Skiing and Snowboarding -->
+            <div class="bg-white text-black p-4 rounded-lg shadow-lg">
+                <img src="images/skiing.jpg" alt="Skiing and Snowboarding" class="w-full rounded-lg mb-4">
+                <h3 class="text-lg font-bold">Skiing & Snowboarding</h3>
+                <p class="text-gray-700">Hit the slopes at Shymbulak, one of the best ski resorts in Central Asia.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <script>
+        const menuBtn = document.getElementById("menu-btn");
+        const mobileMenu = document.getElementById("mobile-menu");
+    
+        menuBtn.addEventListener("click", () => {
+            mobileMenu.classList.toggle("hidden");
+        });
+    </script>
+
+<footer style="background-image: url('images/black-bg.jpg');">
+    <div class="container mx-auto px-6 py-12">
+    <p class="text-center text-white">© 2025 Welcome to Kazakhstan. All rights reserved.</p>
+    </div>
+</footer>
+
+</body>
+</html>
