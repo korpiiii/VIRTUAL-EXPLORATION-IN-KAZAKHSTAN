@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Kazakhstan</title>
+    <link rel="icon" href="images/favicon.png">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,100..900&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap" rel="stylesheet">
+</head>
+
+<body class="m-0 p-0 overflow-x-hidden">
+
+    <div class="min-h-screen flex flex-col justify-between bg-center bg-cover text-white top-0 left-0 w-full  z-50 " style="background-image: url('images/background.jpeg');">
+        <nav class="fixed top-0 left-0 w-full flex items-center justify-between p-4 z-50 backdrop-blur-md bg-black/30  ">
+            <img src="images/logo.png" class="w-64 cursor-pointer" alt="Logo">
+            <button id="menu-btn" class="md:hidden text-white text-3xl">
+                ☰
+            </button>
+            <ul id="menu" class="hidden md:flex space-x-6">
+                <li class="list-none inline-block hover:text-yellow-300 px-5"><a href="index.html">Home</a></li>
+                <li class="list-none inline-block hover:text-yellow-300 px-5"><a href="about.html">About</a></li>
+                <li class="list-none inline-block hover:text-yellow-300 px-5"><a href="activities.html">Activities</a></li>
+                <li class="list-none inline-block hover:text-yellow-300 px-5"><a href="attractions.html">Attractions</a></li>
+                <li class="list-none inline-block hover:text-yellow-300 px-5"><a href="culture.html">Culture</a></li>
+            </ul>
+            <img src="images/favicon.png" class="w-16 cursor-pointer" alt="Kazakhstan Flag">
+        </nav>
+
+        <ul id="mobile-menu" class="hidden flex flex-col space-y-4 p-4 space-y-4 bg-black/70 md:hidden absolute top-16 right-0 left-0 z-50">
+            <li class="list-none hover:text-yellow-300 px-5"><a href="index.html">Home</a></li>
+            <li class="list-none hover:text-yellow-300 px-5"><a href="about.html">About</a></li>
+            <li class="list-none hover:text-yellow-300 px-5"><a href="activities.html">Activities</a></li>
+            <li class="list-none hover:text-yellow-300 px-5"><a href="attractions.html">Attractions</a></li>
+            <li class="list-none hover:text-yellow-300 px-5"><a href="culture.html">Culture</a></li>
+        </ul>
+
+        
+        <section class="min-h-screen flex items-center justify-center p-10">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 w-full max-w-6xl">
+                <a href="#music" class="bg-white/90 p-6 rounded-lg shadow-md hover:scale-105 transition-transform duration-300">
+                    <img src="images/music.jpeg" class="rounded-lg mb-4" alt="Kazakh Tradition">
+                    <h3 class="text-2xl font-bold text-black mb-2">Rich Traditions</h3>
+                    <p class="text-gray-700">Explore the vibrant customs and rituals that define Kazakhstan's heritage.</p>
+                </a>
+                <a href="#language" class="bg-white/90 p-6 rounded-lg shadow-md hover:scale-105 transition-transform duration-300">
+                    <img src="images/language.jpg" class="rounded-lg mb-4" alt="Kazakh Language">
+                    <h3 class="text-2xl font-bold text-black mb-2">Unique Language</h3>
+                    <p class="text-gray-700">Discover the beauty of the Kazakh language and its cultural significance.</p>
+                </a>
+                <a href="#festivals" class="bg-white/90 p-6 rounded-lg shadow-md hover:scale-105 transition-transform duration-300">
+                    <img src="images/festival.jpeg" class="rounded-lg mb-4" alt="Kazakh Festival">
+                    <h3 class="text-2xl font-bold text-black mb-2">Festivals & Celebrations</h3>
+                    <p class="text-gray-700">Experience the joy of Nauryz and other traditional festivals.</p>
+                </a>
+            </div>
+        </section>
+
+        
+        <section id="music" class="min-h-screen p-10 flex flex-col justify-between bg-center bg-cover bg-gray-100 top-0 left-0 w-full z-50" style="background-image: url('images/background2.jpeg');">
+            <h2 class="text-4xl font-bold mb-10 text-center text-black">Traditions</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 ">
+                
+                <div class="bg-black p-6 rounded-lg shadow-md"> Dombra <img src="images/music.jpeg" class="rounded-lg mb-4" alt="Kazakh Tradition"> The dombra is a two-stringed, long-necked, plucked instrument popular in Kazakh culture, while the kobyz is a bowed, ladle-shaped string instrument, both playing a significant role in Kazakh traditional music. 
+                </div>
+                <div class="bg-black p-6 rounded-lg shadow-md">Beshbarmak <img src="images/Beshbarmak.jpg" class="rounded-lg mb-4" alt="Kazakh Tradition">  a hearty, national dish of Kazakhstan and Kyrgyzstan, consisting of boiled meat (traditionally horse or lamb) served over thick, flat noodles, and often topped with onions and broth. </div>
+                <div class="bg-black p-6 rounded-lg shadow-md">Chapan  <img src="images/shapan.jpg" class="rounded-lg mb-4" alt="Kazakh Tradition"> The chapan, a traditional robe deeply rooted in Central Asian culture, particularly in Kazakhstan, is far more than just a piece of clothing. It's a tangible representation of history, climate adaptation, and social standing.</div>
+            </div>
+        </section>
+
+        <section id="language" class="min-h-screen p-10 flex flex-col justify-between bg-center bg-cover bg-gray-100 top-0 left-0 w-full z-50" style="background-image: url('images/background3.jpeg');">
+            <h2 class="text-4xl font-bold mb-10 text-center">Kazakh Language</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-black p-6 rounded-lg shadow-md">Cyrillic and Latin Scripts<img src="images/Cyrillic and Latin Scripts.jpg" class="rounded-lg mb-4" alt="Kazakh Tradition"> The world's writing systems are a testament to the diverse paths of human communication, with the Cyrillic and Latin scripts standing as prominent examples. While both trace their lineage back to the ancient Greek alphabet, their subsequent journeys have shaped distinct cultural and linguistic landscapes. </div>
+                <div class="bg-black p-6 rounded-lg shadow-md">Kazakh Idioms and Expressions <img src="images/Kazakh Idioms and Expressions.jpg" class="rounded-lg mb-4" alt="Kazakh Tradition">Kazakh idioms and expressions, like those of any culture, offer a fascinating glimpse into the nation's values, history, and worldview. They often employ vivid imagery and metaphors, drawing from nomadic traditions, nature, and social customs.</div>
+                <div class="bg-black  p-6 rounded-lg shadow-md">Multilingual Culture <img src="images/Multilingual Culture in kazakhstan.jpg" class="rounded-lg mb-4" alt="Kazakh Tradition">Kazakhstan's multilingual culture is a fascinating tapestry woven from its unique history and geographical position. Situated at the crossroads of Europe and Asia, the country has long been a melting pot of diverse ethnicities and languages. The official language, Kazakh, belongs to the Turkic family, reflecting the nation's nomadic heritage. However, Russian holds a special status, widely used in government, business, and everyday communication, a legacy of the Soviet era. This bilingualism is a defining characteristic of Kazakh society.</div>
+            </div>
+        </section>
+
+        <section id="festivals" class="min-h-screen p-10 flex flex-col justify-between bg-center bg-cover bg-gray-100 top-0 left-0 w-full z-50" style="background-image: url('images/background4.jpeg');">
+            <h2 class="text-4xl font-bold mb-10 text-center text-black">Festivals & Celebrations</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-black p-6 rounded-lg shadow-md">Nauryz <img src="images/Nauryz.jpg" class="rounded-lg mb-4" alt="Kazakh Tradition">Nauryz, also spelled Nowruz or Navruz, is a significant celebration marking the Persian New Year and the arrival of spring. It's a festival deeply rooted in ancient traditions and is celebrated by diverse cultures across Central Asia, the Caucasus, the Balkans, and the Middle East, including Kazakhstan.</div>
+                <div class="bg-black p-6 rounded-lg shadow-md">Kazakh Wedding Traditions <img src="images/Kazakh Wedding Traditions.jpg" class="rounded-lg mb-4" alt="Kazakh Tradition">Kazakh wedding traditions are a rich tapestry of customs and rituals, deeply rooted in the nation's nomadic heritage and emphasizing family, community, and respect for elders. These traditions, while evolving with modern times, still retain their core symbolic significance. </div>
+                <div class="bg-black p-6 rounded-lg shadow-md">Cultural Performances <img src="images/cultralperformance.jpg" class="rounded-lg mb-4" alt="Kazakh Tradition"> Cultural performances in Kazakhstan are a vibrant expression of the nation's rich and diverse heritage, encompassing a wide range of artistic forms that have been passed down through generations. These performances serve not only as entertainment but also as vital carriers of cultural memory, preserving traditions, stories, and values.</div>
+            </div>
+        </section>
+
+    </div>
+    <script>
+        const menuBtn = document.getElementById("menu-btn");
+        const mobileMenu = document.getElementById("mobile-menu");
+
+        menuBtn.addEventListener("click", () => {
+            mobileMenu.classList.toggle("hidden");
+        });
+
+        window.addEventListener("resize", () => {
+            if (window.innerWidth >= 768) {
+                mobileMenu.classList.add("hidden");
+            }
+        });
+    </script>
+    <footer class="bg-black text-white py-12 px-10 grid grid-cols-1 md:grid-cols-4 gap-8 text-sm">
+        <div>
+            <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+            <ul class="space-y-2">
+                <li><a href="#" class="hover:text-yellow-300">Home</a></li>
+                <li><a href="#" class="hover:text-yellow-300">About</a></li>
+                <li><a href="#" class="hover:text-yellow-300">Contact</a></li>
+                <li><a href="#" class="hover:text-yellow-300">Activities</a></li>
+                <li><a href="#" class="hover:text-yellow-300">Attractions</a></li>
+            </ul>
+        </div>
+        <div>
+            <h3 class="text-xl font-bold mb-4">Contact Info</h3>
+            <p>Email: info@kazakhstan.com</p>
+            <p>Phone: +7 123 456 7890</p>
+            <p>Address: Astana, Kazakhstan</p>
+        </div>
+        <div>
+            <h3 class="text-xl font-bold mb-4">Social Media</h3>
+            <p>Instagram | Facebook | Twitter | YouTube</p>
+        </div>
+        <div>
+            <h3 class="text-xl font-bold mb-4">Newsletter</h3>
+            <p>Subscribe to get the latest updates.</p>
+            <input type="email" placeholder="Your Email" class="p-2 w-full rounded-lg text-black mt-2">
+            <button class="mt-4 bg-yellow-300 text-black py-2 px-4 rounded-lg hover:bg-yellow-400">Subscribe</button>
+        </div>
+    </footer>
+
+</body>
+
+</html>
