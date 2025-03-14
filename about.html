@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Kazakhstan</title>
+    <link rel="icon" href="images/favicon.png">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,100..900&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap" rel="stylesheet">
+</head>
+
+<body class="m-0 p-0 overflow-x-hidden">
+
+    <div class="min-h-screen flex flex-col justify-between bg-center bg-cover text-white top-0 left-0 w-full  z-50 " style="background-image: url('images/background2.jpeg');">
+        <nav class="fixed top-0 left-0 w-full flex items-center justify-between p-4 z-50 backdrop-blur-md bg-black/30  ">
+            <img src="images/logo.png" class="w-64 cursor-pointer" alt="Logo">
+            <button id="menu-btn" class="md:hidden text-white text-3xl">
+                ☰
+            </button>
+            <ul id="menu" class="hidden md:flex space-x-6">
+                <li class="list-none inline-block hover:text-yellow-300 px-5"><a href="index.html">Home</a></li>
+                <li class="list-none inline-block hover:text-yellow-300 px-5"><a href="about.html">About</a></li>
+                <li class="list-none inline-block hover:text-yellow-300 px-5"><a href="activities.html">Activities</a></li>
+                <li class="list-none inline-block hover:text-yellow-300 px-5"><a href="attractions.html">Attractions</a></li>
+                <li class="list-none inline-block hover:text-yellow-300 px-5"><a href="culture.html">Culture</a></li>
+            </ul>
+            <img src="images/favicon.png" class="w-16 cursor-pointer" alt="Kazakhstan Flag">
+        </nav>
+
+        <ul id="mobile-menu" class="hidden flex flex-col space-y-4 p-4 space-y-4 bg-black/70 md:hidden absolute top-16 right-0 left-0 z-50">
+            <li class="list-none hover:text-yellow-300 px-5"><a href="index.html">Home</a></li>
+            <li class="list-none hover:text-yellow-300 px-5"><a href="about.html">About</a></li>
+            <li class="list-none hover:text-yellow-300 px-5"><a href="activities.html">Activities</a></li>
+            <li class="list-none hover:text-yellow-300 px-5"><a href="attractions.html">Attractions</a></li>
+            <li class="list-none hover:text-yellow-300 px-5"><a href="culture.html">Culture</a></li>
+        </ul>
+
+    <section class="relative bg-cover bg-center min-h-screen flex items-center justify-center text-white">
+        <div class="relative container mx-auto px-6">
+           <h2 class="text-4xl font-bold text-center text-black mb-6">Geography of Kazakhstan</h2>
+        
+           <div class="grid md:grid-cols-2 gap-10 items-center bg-white/70 p-8 rounded-lg shadow-lg">
+             
+               <div>
+                    <p class="text-5xl text-black font-bold">
+                        Did You Know?
+                    </p>
+                    
+                   <p class="mt-4 text-lg text-black text-justify font-semibold">
+                       Kazakhstan is the largest landlocked country in the world, covering an area of 
+                       approximately 2.7 million square kilometers. It is located in Central Asia, 
+                       bordered by Russia, China, Kyrgyzstan, Uzbekistan, and Turkmenistan.
+                   </p>
+                   <p class="mt-4 text-lg text-black text-justify font-semibold">                             
+                       The country features vast steppes, mountains, deserts, and lakes, including the famous 
+                       Caspian Sea, the Tien Shan mountains, and Lake Balkhash. Kazakhstan's climate is 
+                       continental, with hot summers and cold winters.
+                   </p>
+               </div>
+        
+            
+               <div class="flex justify-center">
+                   <img src="images/kazakhstan-map.png" alt="Kazakhstan Map" 
+                        class="w-full max-w-md rounded-lg shadow-lg">
+               </div>
+           </div>
+        </div>
+        </section>  
+        </div>
+
+        <script>
+            const menuBtn = document.getElementById("menu-btn");
+            const mobileMenu = document.getElementById("mobile-menu");
+    
+            menuBtn.addEventListener("click", () => {
+                mobileMenu.classList.toggle("hidden");
+            });
+    
+            window.addEventListener("resize", () => {
+                if (window.innerWidth >= 768) {
+                    mobileMenu.classList.add("hidden");
+                }
+            });
+        </script>
+     <footer class="bg-black text-white py-12 px-10 grid grid-cols-1 md:grid-cols-4 gap-8 text-sm">
+        <div>
+            <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+            <ul class="space-y-2">
+                <li><a href="#" class="hover:text-yellow-300">Home</a></li>
+                <li><a href="#" class="hover:text-yellow-300">About</a></li>
+                <li><a href="#" class="hover:text-yellow-300">Contact</a></li>
+                <li><a href="#" class="hover:text-yellow-300">Activities</a></li>
+                <li><a href="#" class="hover:text-yellow-300">Attractions</a></li>
+            </ul>
+        </div>
+        <div>
+            <h3 class="text-xl font-bold mb-4">Contact Info</h3>
+            <p>Email: info@kazakhstan.com</p>
+            <p>Phone: +7 123 456 7890</p>
+            <p>Address: Astana, Kazakhstan</p>
+        </div>
+        <div>
+            <h3 class="text-xl font-bold mb-4">Social Media</h3>
+            <p>Instagram | Facebook | Twitter | YouTube</p>
+        </div>
+        <div>
+            <h3 class="text-xl font-bold mb-4">Newsletter</h3>
+            <p>Subscribe to get the latest updates.</p>
+            <input type="email" placeholder="Your Email" class="p-2 w-full rounded-lg text-black mt-2">
+            <button class="mt-4 bg-yellow-300 text-black py-2 px-4 rounded-lg hover:bg-yellow-400">Subscribe</button>
+        </div>
+    </footer>
+    </body>
+    
+    </html>
+    
