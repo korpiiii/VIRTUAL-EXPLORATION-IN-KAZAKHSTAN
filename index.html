@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-<head > 
+
+<head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=2.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome to Kazakhstan</title>
     <link rel="icon" href="images/favicon.png">
     <link rel="stylesheet" href="style.css">
@@ -11,53 +12,208 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,100..900&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap" rel="stylesheet">
 </head>
-        <div class="relative h-screen bg-center bg-cover text-white  top-0 left-0 w-full p-4 z-50 bg-opacity-50 " style="background-image: url('images/background.jpeg');">
-            <nav class="flex items-center justify-between">   
-                <img src="images/logo.png" class=" w-96 cursor-pointer" alt="Logo">
-                <button id="menu-btn" class="md:hidden text-white text-3xl">
-                    ☰
-                 </button>
-                <ul id="menu" class="hidden md:flex space-x-6">
-                    <li class="list-none inline-block hover:text-yellow-300 px-5"><a href="index.html">Home</a></li>
-                    <li class="list-none inline-block hover:text-yellow-300 px-5"><a href="about.html">About</a></li>
-                    <li class="list-none inline-block hover:text-yellow-300 px-5"><a href="activities.html">Activities</a></li>
-                    <li class="list-none inline-block hover:text-yellow-300 px-5"><a href="attractions.html">Attractions</a></li>
-                    <li class="list-none inline-block hover:text-yellow-300 px-5"><a href="culture.html">Culture</a></li>
-                </ul>
 
-                
-                <img src="images/favicon.png" class=" w-40 h-30 p-4 cursor-pointer" alt="Kazakhstan Flag" >
-            </nav>
-            <ul id="mobile-menu" class="hidden flex flex-col space-y-4 bg-transparent p-4 md:hidden">
+<body class="m-0 p-0 overflow-x-hidden">
+
+    <div class="min-h-screen flex flex-col justify-between bg-center bg-cover text-white top-0 left-0 w-full  z-50 " style="background-image: url('images/background.jpeg');">
+        <nav class="fixed top-0 left-0 w-full flex items-center justify-between p-4 z-50 ">
+            <img src="images/logo.png" class="w-64 cursor-pointer" alt="Logo">
+            <button id="menu-btn" class="md:hidden text-white text-3xl">
+                ☰
+            </button>
+            <ul id="menu" class="hidden md:flex space-x-6">
                 <li class="list-none inline-block hover:text-yellow-300 px-5"><a href="index.html">Home</a></li>
                 <li class="list-none inline-block hover:text-yellow-300 px-5"><a href="about.html">About</a></li>
                 <li class="list-none inline-block hover:text-yellow-300 px-5"><a href="activities.html">Activities</a></li>
                 <li class="list-none inline-block hover:text-yellow-300 px-5"><a href="attractions.html">Attractions</a></li>
                 <li class="list-none inline-block hover:text-yellow-300 px-5"><a href="culture.html">Culture</a></li>
             </ul>
+            <img src="images/favicon.png" class="w-16 cursor-pointer" alt="Kazakhstan Flag">
+        </nav>
 
-            <section class="relative h-screen bg-cover bg-center justify-between">
-                <!-- Overlay -->
-                <div class="absolute inset-0  bg-opacity-50"></div>
+        <ul id="mobile-menu" class="hidden flex flex-col space-y-4 p-4 md:hidden absolute top-16 right-0 left-0 z-50">
+            <li class="list-none hover:text-yellow-300 px-5"><a href="index.html">Home</a></li>
+            <li class="list-none hover:text-yellow-300 px-5"><a href="about.html">About</a></li>
+            <li class="list-none hover:text-yellow-300 px-5"><a href="activities.html">Activities</a></li>
+            <li class="list-none hover:text-yellow-300 px-5"><a href="attractions.html">Attractions</a></li>
+            <li class="list-none hover:text-yellow-300 px-5"><a href="culture.html">Culture</a></li>
+        </ul>
+
+        <section class="flex-grow flex flex-col items-center justify-center text-center text-white px-6 backdrop-blur-md bg-black/40">
+            <h1 class="text-4xl md:text-6xl font-bold">Welcome to Kazakhstan</h1>
+            <p class="text-lg md:text-2xl mt-4 max-w-2xl">Discover the beauty, culture, and adventure of this amazing country.</p>
+            <a href="attractions.html" class="mt-6 px-6 py-3 bg-yellow-500 text-black font-semibold rounded-lg shadow-md hover:bg-yellow-600 transition">Explore Now</a>
+        </section>
+
+    </div>
+<div>
+    <section class="min-h-screen p-10 flex flex-col justify-between bg-center bg-cover bg-gray-100 top-0 left-0 w-full z-50" style="background-image: url('images/background2.jpeg');">
+        
+        <div class="relative container mx-auto px-6">
+           <h2 class="text-4xl font-bold text-center text-black mb-6">Geography of Kazakhstan</h2>
+        
+           <div class="grid md:grid-cols-2 gap-10 items-center bg-white/70 p-8 rounded-lg shadow-lg">
+             
+               <div>
+                    <p class="text-5xl text-black font-bold">
+                        Did You Know?
+                    </p>
+                    
+                   <p class="mt-4 text-lg text-black text-justify font-semibold">
+                       Kazakhstan is the largest landlocked country in the world, covering an area of 
+                       approximately 2.7 million square kilometers. It is located in Central Asia, 
+                       bordered by Russia, China, Kyrgyzstan, Uzbekistan, and Turkmenistan.
+                   </p>
+                   <p class="mt-4 text-lg text-black text-justify font-semibold">                             
+                       The country features vast steppes, mountains, deserts, and lakes, including the famous 
+                       Caspian Sea, the Tien Shan mountains, and Lake Balkhash. Kazakhstan's climate is 
+                       continental, with hot summers and cold winters.
+                   </p>
+               </div>
+        
             
-                <!-- Hero Content -->
-                <div class="relative z-10 flex flex-col items-center justify-center h-full text-center text-white px-6">
-                    <h1 class="text-4xl md:text-6xl font-bold">Welcome to Kazakhstan</h1>
-                    <p class="text-lg md:text-2xl mt-4 max-w-2xl">Discover the beauty, culture, and adventure of this amazing country.</p>
-                    <a href="attractions.html" class="mt-6 px-6 py-3 bg-yellow-500 text-black font-semibold rounded-lg shadow-md hover:bg-yellow-600 transition">Explore Now</a>
-                </div>
-            </section>
+               <div class="flex justify-center">
+                   <img src="images/kazakhstan-map.png" alt="Kazakhstan Map" 
+                        class="w-full max-w-md rounded-lg shadow-lg">
+               </div>
+           </div>
         </div>
-        <footer class="bg-gray-900 text-white text-center py-4 mt-12">
-            <p>&copy; 2025 Kazakhstan Travel Guide</p>
-        </footer>
-    </body>
+        </section>  
+        </div>
+
+    
+        <section class="min-h-screen p-10 flex flex-col justify-between bg-center bg-cover bg-gray-100 top-0 left-0 w-full z-50" style="background-image: url('images/background3.jpeg');">
+            <div>
+                <h2 class="text-4xl font-bold text-center  text-black m6">Activities</h2>
+                <div class="grid md:grid-cols-3 gap-6 bg-white/10 p-8 rounded-lg shadow-lg">
+                    
+                    <div class="bg-white text-black p-4 rounded-lg shadow-lg">
+                        <img src="images/ride.jpg" alt="Horseback Riding" class="w-full rounded-lg mb-4">
+                        <h3 class="text-lg font-bold">Horseback Riding</h3>
+                        <p class="text-gray-700">Experience traditional Kazakh culture by riding through scenic landscapes.</p>
+                    </div>
+                    
+                    <div class="bg-white text-black p-4 rounded-lg shadow-lg">
+                        <img src="images/hiking.jpg" alt="Hiking and Trekking" class="w-full rounded-lg mb-4">
+                        <h3 class="text-lg font-bold">Hiking & Trekking</h3>
+                        <p class="text-gray-700">Explore Kazakhstan’s mountains and valleys with stunning panoramic views.</p>
+                    </div>
+                   
+                    <div class="bg-white text-black p-4 rounded-lg shadow-lg">
+                        <img src="images/ski.jpg" alt="Skiing and Snowboarding" class="w-full rounded-lg mb-4">
+                        <h3 class="text-lg font-bold">Skiing & Snowboarding</h3>
+                        <p class="text-gray-700">Hit the slopes at Shymbulak, one of the best ski resorts in Central Asia.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="mx-auto px-6 py-12 bg-yellow-100">
+            <h2 class="text-4xl font-bold text-center mb-8">Top 5 Must-Visit Places</h2>
+    
+            <div class="grid md:grid-cols-3 lg:grid-cols-5 gap-6">
+    
+               
+                <div class="bg-white p-4 rounded-lg shadow-lg">
+                    <img src="images/charyn-canyon.jpg" alt="Charyn Canyon" class="w-full rounded-lg mb-4">
+                    <h3 class="text-lg font-bold">Charyn Canyon</h3>
+                    <p class="text-gray-700">Known as the "Grand Canyon of Kazakhstan." Perfect for hiking and photography.</p>
+                </div>
+    
+               
+                <div class="bg-white p-4 rounded-lg shadow-lg">
+                    <img src="images/Baikonur Cosmodrome.jpg" alt="Baikonur Cosmodrome" class="w-full rounded-lg mb-4">
+                    <h3 class="text-lg font-bold">Baikonur Cosmodrome</h3>
+                    <p class="text-gray-700">The world’s largest space launch facility where Yuri Gagarin was launched.</p>
+                </div>
+    
+                
+                <div class="bg-white p-4 rounded-lg shadow-lg">
+                    <img src="images/Medeu Skating Rink.jpg" alt="Medeu Skating Rink" class="w-full rounded-lg mb-4">
+                    <h3 class="text-lg font-bold">Medeu Skating Rink</h3>
+                    <p class="text-gray-700">The highest ice skating rink, surrounded by beautiful mountains.</p>
+                </div>
+    
+             
+                <div class="bg-white p-4 rounded-lg shadow-lg">
+                    <img src="images/Big Almaty Lake.jpg" alt="Big Almaty Lake" class="w-full rounded-lg mb-4">
+                    <h3 class="text-lg font-bold">Big Almaty Lake</h3>
+                    <p class="text-gray-700">A breathtaking turquoise lake, ideal for hiking and photography.</p>
+                </div>
+    
+               
+                <div class="bg-white p-4 rounded-lg shadow-lg">
+                    <img src="images/Turkestan.jpg" alt="Turkestan" class="w-full rounded-lg mb-4">
+                    <h3 class="text-lg font-bold">Turkestan</h3>
+                    <p class="text-gray-700">A UNESCO site with stunning Persian-style architecture.</p>
+                </div>
+    
+            </div>
+        </section>
+        
+            
+        <section class="min-h-screen flex items-center justify-center p-10" style="background-image: url('images/background4.jpeg');">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 w-full max-w-6xl">
+                <a href="#music" class="bg-white/90 p-6 rounded-lg shadow-md hover:scale-105 transition-transform duration-300">
+                    <img src="images/music.jpeg" class="rounded-lg mb-4" alt="Kazakh Tradition">
+                    <h3 class="text-2xl font-bold text-black mb-2">Rich Traditions</h3>
+                    <p class="text-gray-700">Explore the vibrant customs and rituals that define Kazakhstan's heritage.</p>
+                </a>
+                <a href="#language" class="bg-white/90 p-6 rounded-lg shadow-md hover:scale-105 transition-transform duration-300">
+                    <img src="images/language.jpg" class="rounded-lg mb-4" alt="Kazakh Language">
+                    <h3 class="text-2xl font-bold text-black mb-2">Unique Language</h3>
+                    <p class="text-gray-700">Discover the beauty of the Kazakh language and its cultural significance.</p>
+                </a>
+                <a href="#festivals" class="bg-white/90 p-6 rounded-lg shadow-md hover:scale-105 transition-transform duration-300">
+                    <img src="images/festival.jpeg" class="rounded-lg mb-4" alt="Kazakh Festival">
+                    <h3 class="text-2xl font-bold text-black mb-2">Festivals & Celebrations</h3>
+                    <p class="text-gray-700">Experience the joy of Nauryz and other traditional festivals.</p>
+                </a>
+            </div>
+        </section>
+      
     <script>
         const menuBtn = document.getElementById("menu-btn");
         const mobileMenu = document.getElementById("mobile-menu");
-    
+
         menuBtn.addEventListener("click", () => {
             mobileMenu.classList.toggle("hidden");
         });
+
+        window.addEventListener("resize", () => {
+            if (window.innerWidth >= 768) {
+                mobileMenu.classList.add("hidden");
+            }
+        });
     </script>
+ <footer class="bg-black text-white py-12 px-10 grid grid-cols-1 md:grid-cols-4 gap-8 text-sm">
+    <div>
+        <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+        <ul class="space-y-2">
+            <li><a href="#" class="hover:text-yellow-300">Home</a></li>
+            <li><a href="#" class="hover:text-yellow-300">About</a></li>
+            <li><a href="#" class="hover:text-yellow-300">Contact</a></li>
+            <li><a href="#" class="hover:text-yellow-300">Activities</a></li>
+            <li><a href="#" class="hover:text-yellow-300">Attractions</a></li>
+        </ul>
+    </div>
+    <div>
+        <h3 class="text-xl font-bold mb-4">Contact Info</h3>
+        <p>Email: info@kazakhstan.com</p>
+        <p>Phone: +7 123 456 7890</p>
+        <p>Address: Astana, Kazakhstan</p>
+    </div>
+    <div>
+        <h3 class="text-xl font-bold mb-4">Social Media</h3>
+        <p>Instagram | Facebook | Twitter | YouTube</p>
+    </div>
+    <div>
+        <h3 class="text-xl font-bold mb-4">Newsletter</h3>
+        <p>Subscribe to get the latest updates.</p>
+        <input type="email" placeholder="Your Email" class="p-2 w-full rounded-lg text-black mt-2">
+        <button class="mt-4 bg-yellow-300 text-black py-2 px-4 rounded-lg hover:bg-yellow-400">Subscribe</button>
+    </div>
+</footer>
+
+</body>
+
 </html>
