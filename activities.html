@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Kazakhstan</title>
+    <link rel="icon" href="images/favicon.png">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,100..900&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="relative h-screen bg-center bg-cover text-white top-0 left-0 w-full p-4 z-50 bg-opacity-50" style="background-image: url('images/background.jpeg');">
+        <nav class="flex items-center justify-between">   
+            <img src="images/logo.png" class="w-96 cursor-pointer" alt="Logo">
+            <button id="menu-btn" class="md:hidden text-white text-3xl">☰</button>
+            <ul id="menu" class="hidden md:flex space-x-6">
+                <li class="list-none hover:text-yellow-300 px-5"><a href="index.html">Home</a></li>
+                <li class="list-none hover:text-yellow-300 px-5"><a href="about.html">About</a></li>
+                <li class="list-none hover:text-yellow-300 px-5"><a href="activities.html">Activities</a></li>
+                <li class="list-none hover:text-yellow-300 px-5"><a href="attractions.html">Attractions</a></li>
+                <li class="list-none hover:text-yellow-300 px-5"><a href="culture.html">Culture</a></li>
+            </ul>
+            <img src="images/favicon.png" class="w-40 h-30 p-4 cursor-pointer" alt="Kazakhstan Flag">
+        </nav>
+
+        <ul id="mobile-menu" class="hidden flex flex-col space-y-4 bg-transparent p-4 md:hidden">
+            <li class="list-none hover:text-yellow-300 px-5"><a href="index.html">Home</a></li>
+            <li class="list-none hover:text-yellow-300 px-5"><a href="about.html">About</a></li>
+            <li class="list-none hover:text-yellow-300 px-5"><a href="activities.html">Activities</a></li>
+            <li class="list-none hover:text-yellow-300 px-5"><a href="attractions.html">Attractions</a></li>
+            <li class="list-none hover:text-yellow-300 px-5"><a href="culture.html">Culture</a></li>
+        </ul>
+
+        <!-- Leisure Activities Section -->
+        <section class="relative bg-cover bg-center min-h-screen flex items-center justify-center" style="background-image: url('images/leisure-bg.jpg');">
+            <div class="relative container mx-auto px-6">
+                <h2 class="text-4xl font-bold text-center text-black mb-6">Leisure Activities in Kazakhstan</h2>
+                <div class="grid md:grid-cols-3 gap-6 bg-white/10 p-8 rounded-lg shadow-lg">
+                    <!-- Horseback Riding -->
+                    <div class="bg-white text-black p-4 rounded-lg shadow-lg">
+                        <img src="images/ride.jpg" alt="Horseback Riding" class="w-full rounded-lg mb-4">
+                        <h3 class="text-lg font-bold">Horseback Riding</h3>
+                        <p class="text-gray-700">Experience traditional Kazakh culture by riding through scenic landscapes.</p>
+                    </div>
+                    <!-- Hiking and Trekking -->
+                    <div class="bg-white text-black p-4 rounded-lg shadow-lg">
+                        <img src="images/hiking.jpg" alt="Hiking and Trekking" class="w-full rounded-lg mb-4">
+                        <h3 class="text-lg font-bold">Hiking & Trekking</h3>
+                        <p class="text-gray-700">Explore Kazakhstan’s mountains and valleys with stunning panoramic views.</p>
+                    </div>
+                    <!-- Skiing and Snowboarding -->
+                    <div class="bg-white text-black p-4 rounded-lg shadow-lg">
+                        <img src="images/ski.jpg" alt="Skiing and Snowboarding" class="w-full rounded-lg mb-4">
+                        <h3 class="text-lg font-bold">Skiing & Snowboarding</h3>
+                        <p class="text-gray-700">Hit the slopes at Shymbulak, one of the best ski resorts in Central Asia.</p>
+                    </div>
+
+                    
+                </div>
+                
+            </div>
+            
+        </section>
+ <!-- Footer -->
+ <footer class="bg-gray-900 text-white text-center py-4 mt-12">
+    <p>&copy; 2025 Kazakhstan Travel Guide</p>
+</footer>
+</div>
+    <script>
+        const menuBtn = document.getElementById("menu-btn");
+        const mobileMenu = document.getElementById("mobile-menu");
+
+        menuBtn.addEventListener("click", () => {
+            mobileMenu.classList.toggle("hidden");
+        });
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
